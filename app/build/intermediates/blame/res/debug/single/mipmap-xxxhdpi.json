@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_good.png",
+        "source": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_good.png"
+    },
+    {
+        "merged": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_heart.png",
+        "source": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_heart.png"
+    },
+    {
+        "merged": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_danger.png",
+        "source": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_danger.png"
+    },
+    {
+        "merged": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_warning.png",
+        "source": "D:\\POLINEMA\\sem5\\Andro\\HeartBerry\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_warning.png"
+    }
+]
