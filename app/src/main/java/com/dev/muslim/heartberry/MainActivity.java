@@ -58,8 +58,9 @@ public class MainActivity extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.show();
         final AsyncHttpClient client= new AsyncHttpClient();
-
-        URL="http://192.168.1.9:8080/heartberry/api/SendData.php";
+        Intent id=getIntent();
+        Log.d("id_elderly1",id.getStringExtra("id_elderly"));
+        URL=Login.IP+"/heartberry/api/SendData.php?id_elderly="+id.getStringExtra("id_elderly");
         client.setConnectTimeout(10000);
         client.get(getApplicationContext(), URL,new JsonHttpResponseHandler(){
 
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 //                        }else{
 //                            kondisi="Normal";
 //                        }
-                        DataElderly data= new DataElderly(Integer.valueOf(object.getString("id_elderly")),object.getString("name"),object.getString("born"),object.getString("room"),object.getString("waktu"),object.getString("heartbeat"),object.getString("kondisi"));
+                        DataElderly data= new DataElderly(Integer.valueOf(object.getString("id_elderly")),object.getString("name"),object.getString("born"),object.getString("room"),object.getString("waktu"),object.getString("heartbeat"),object.getString("condition"));
                         arrayList.add(data);
 
 
@@ -146,13 +147,16 @@ public class MainActivity extends AppCompatActivity {
             holder.kondisi.setText(String.valueOf(pl.getKondisi()));
 
             switch (String.valueOf(pl.getKondisi())) {
-                case "good" :
+                case "very good":
                     holder.icon.setImageResource(R.mipmap.ic_good);
                     break;
-                case "warning":
+                case "good":
+                    holder.icon.setImageResource(R.mipmap.ic_good);
+                    break;
+                case "not bad":
                     holder.icon.setImageResource(R.mipmap.ic_warning);
                     break;
-                case "danger":
+                case "bad":
                     holder.icon.setImageResource(R.mipmap.ic_danger);
                     break;
 

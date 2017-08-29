@@ -16,9 +16,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.dev.muslim.heartberry.MainActivity" >
-        </activity>
+        <activity android:name="com.dev.muslim.heartberry.MainActivity" />
         <activity android:name="com.dev.muslim.heartberry.ConditionNow" >
+        </activity>
+        <activity
+            android:name="com.dev.muslim.heartberry.Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
